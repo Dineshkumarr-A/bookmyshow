@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "shows")
 public class Show extends BaseModel{
     @ManyToOne
     private Movie movie; // one movie can have multiple show not at a particular time
